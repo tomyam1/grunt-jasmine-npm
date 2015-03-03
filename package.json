@@ -1,0 +1,21 @@
+{
+  "name": "grunt-jasmine-npm",
+  "version": "0.1.0",
+  "description": "Run Jasmine tests with the official Jasmine runner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tepez/grunt-jasmine-npm.git"
+  },
+  "author": "tepez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tepez/grunt-jasmine-npm/issues"
+  },
+  "homepage": "https://github.com/tepez/grunt-jasmine-npm",
+  "dependencies": {
+    "jasmine": "^2.2.1",
+    "jasmine-reporters": "^2.0.4",
+    "jasmine-spec-reporter": "^2.1.0",
+    "joi": "^6.0.0"
+  }
+}
