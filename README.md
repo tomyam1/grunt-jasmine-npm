@@ -50,7 +50,3 @@ To report to the console with jasmine-spec-reporter (with its default options) w
       },
     },
 
-
-## TODO
-
-- Add tests and CI to this repo.
