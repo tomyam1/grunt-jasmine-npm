@@ -60,11 +60,7 @@ module.exports = function(grunt) {
 
     jasmine.specFiles = this.filesSrc || [];
 
-    jasmine.configureDefaultReporter({
-      onComplete: function(passed) {
-        done(passed);
-      }
-    });
+    jasmine.onComplete(done);
 
     jasmine.execute();
   });
