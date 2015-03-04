@@ -1,4 +1,7 @@
 # grunt-jasmine-npm
+
+[![Build Status](https://travis-ci.org/tepez/grunt-jasmine-npm.svg)](https://travis-ci.org/tepez/grunt-jasmine-npm)
+
 Runs jasmine tests with the [official](https://github.com/jasmine/jasmine-npm) runner.
 Uses [jasmine-reporters](https://github.com/larrymyers/jasmine-reporters) or [jasmine-spec-reporter](https://github.com/bcaudan/jasmine-spec-reporter) for reporting.
 
