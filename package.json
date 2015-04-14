@@ -20,12 +20,12 @@
     "jasmine": "jasmine/jasmine-npm#b57e749eca46cf3647498f3b86b7dccbc3912581",
     "jasmine-reporters": "^2.0.4",
     "jasmine-spec-reporter": "^2.1.0",
-    "joi": "^6.0.0"
+    "joi": "^6.0.0",
+    "lodash": "^3.3.1"
   },
   "devDependencies": {
     "chai": "^2.1.0",
     "grunt": "^0.4.5",
-    "lodash": "^3.3.1",
     "mocha": "^2.1.0",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.7.0"

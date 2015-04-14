@@ -4,6 +4,7 @@ var Chai = require('chai'),
   SinonChai = require("sinon-chai"),
   Sinon = require('sinon'),
   Grunt = require('grunt'),
+  Path = require('path'),
   JasmineReporters = require('jasmine-reporters'),
   ExitCodeReporter = require('jasmine/lib/reporters/exit_code_reporter'),
   JasmineSpecReporter = require('jasmine-spec-reporter'),
@@ -62,7 +63,7 @@ describe('jasmine', function() {
       Grunt.task.start();
     });
 
-    it('should be the source files given to the task', function(done) {
+    it('should be the source files given to the task, resolved to full paths', function(done) {
       Grunt.config('jasmine', {
         test: {
           src: [
@@ -73,8 +74,8 @@ describe('jasmine', function() {
       });
       Grunt.task.options({ done: function() {
         expect(specFiles).to.eql([
-          'test/spec/test1.spec.js',
-          'test/spec/test2.spec.js'
+          Path.resolve('test/spec/test1.spec.js'),
+          Path.resolve('test/spec/test2.spec.js')
         ]);
         done();
       } });

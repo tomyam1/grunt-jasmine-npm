@@ -3,7 +3,9 @@
 var Jasmine = require('jasmine'),
   JasmineReporters = require('jasmine-reporters'),
   JasmineSpecReporter = require('jasmine-spec-reporter'),
-  Joi = require('joi');
+  Joi = require('joi'),
+  Path = require('path'),
+  _ = require('lodash');
 
 
 module.exports = function(grunt) {
@@ -57,8 +59,10 @@ module.exports = function(grunt) {
       }
     });
 
-
-    jasmine.specFiles = this.filesSrc || [];
+    // resolve the full paths of each spec file
+    jasmine.specFiles = _.map(this.filesSrc, function(src) {
+      return Path.resolve(src);
+    });
 
     jasmine.onComplete(done);
 
